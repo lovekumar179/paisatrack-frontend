@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/register.css" />
+        <title>PaisaTrack - Register</title>
+    </head>
+    <body>
+        <main>
+
+                <!-- App title -->
+                <div class="app-title">
+                    <h1>Paisa Track</h1>
+                    <span>Manage your money easily</span>
+                </div>
+
+                <div class="main-container">
+                    <!-- Signup Title -->
+                    <div class="main-title">
+                        <h1>Register</h1>
+                    </div>
+
+                    <!-- Register form -->
+                    <form action="login.html" method="post">
+                        <input
+                            class="inputBox"
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            title="Enter your full name"
+                            placeholder="Full Name"
+                            autofocus
+                            required
+                        />
+                        <input
+                            class="inputBox"
+                            type="email"
+                            name="email"
+                            id="email"
+                            title="Enter valid email"
+                            placeholder="Email"
+                            autofocus
+                            required
+                        />
+                        <input
+                            class="inputBox"
+                            type="password"
+                            name="password"
+                            id="password"
+                            title="Enter strong password"
+                            placeholder="Password"
+                            required
+                        />
+                        <!-- login button -->
+                        <div class="reg-btn">
+                            <button id="register" type="submit">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- link to login page -->
+                    <div class="login-page">
+                        Already have an account?
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            
+        </main>
+    </body>
+</html>
