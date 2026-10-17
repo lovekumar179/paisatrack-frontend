@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #0b0b2b;
+    background-color: #444d5e;
 }
 
 main {
@@ -18,18 +18,17 @@ main {
     text-align: center;
     flex-direction: column;
     gap: 0.35rem;
-
 }
 
+/* <!-- App title --> */
 .app-title {
-    /* background: linear-gradient(to right, #772727, #6a49df); */
-    background-color: #9c9c9c;
+    background-color: #e0ebf7;
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0px 4px 17px 4px rgb(47 46 46);
     width: 100%;
     max-width: 450px;
-    border: 3px solid #772727;
+    border: 3px solid #201b66;
 }
 
 .app-title span {
@@ -43,7 +42,7 @@ main {
     max-width: 450px;
     height: 100%;
     max-height: 60%;
-    background-color: #9c9c9c;
+    background-color: #e0ebf7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,30 +53,47 @@ main {
     box-shadow: 0px 4px 17px 4px rgb(47 46 46);
 }
 
+/* <!-- Register form --> */
 
 form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .inputBox {
     width: 100%;
     min-width: 0;
     height: 55px;
-    min-height: 40px;
     font-size: 16px;
-    border: 1px solid #1b1b1b;
+    border: 1px solid #79abcc;
     border-radius: 5px;
     padding: 0 15px;
+    margin-bottom: 15px;
 }
+
+input:focus {
+    border: 2px solid #4f46e5;
+    outline: none;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    align-self: baseline;
+    padding-left: 2%;
+}
+
+/* <!-- login button --> */
 
 .reg-btn > button {
     width: 80%;
     height: 50px;
-    /* background: #c7420e; */
-    background: linear-gradient(to left, #772727, #6a49df);
+    background: #4f46e5;
     color: #fff;
     font-size: 18px;
     border: none;
@@ -87,9 +103,10 @@ form {
 }
 
 form button:hover {
-    font-size: 22px;
-    width: 80.84%;
-    max-height: 50.75px;
+    background-color: #4338ca;
+    font-size: 19.3px;
+    width: 80.4%;
+    height: 50.4px;
     color: black;
 }
 
@@ -98,7 +115,7 @@ form button:active {
     color: #000;
 }
 
-/* link to Signup page */
+/* link to login page */
 div > a {
     text-decoration: none;
 }
@@ -107,7 +124,17 @@ div > a:visited {
     color: #7e07ee;
 }
 
-.signup {
+.login-page {
     font-size: 16px;
     overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .app-title h1 {
+        font-size: 25px;
+    }
 }
