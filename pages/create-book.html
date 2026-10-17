@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/create-book.css" />
+        <title>create-book</title>
+    </head>
+    <body>
+        <main>
+            <div class="card">
+                <!-- Create Book Title -->
+                <div class="main-title">
+                    <h2>Create A Paisa Book</h2>
+                    <span>manage your money easily</span>
+                </div>
+
+                <!-- Create Book form -->
+                <form action="login.html" method="post">
+                    <label for="book-name">BOOK NAME</label>
+                    <input
+                        class="inputBox"
+                        type="text"
+                        name="book-name"
+                        id="book-name"
+                        title="Enter valid email"
+                        placeholder="e.g. Grocery expense"
+                        autofocus
+                        required
+                    />
+                    <label for="currency">CURRENCY</label>
+                    <select class="inputBox" name="currency" id="currency">
+                        <option value="pkr">PKR</option>
+                        <option value="us-dollar">US DOLLAR</option>
+                    </select>
+
+                    <!-- Create button -->
+                    <div class="create-btn">
+                        <button id="paisa-book" type="submit">Create Book</button>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+    </body>
+</html>
