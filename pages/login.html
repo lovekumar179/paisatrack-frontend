@@ -3,19 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/paisatrack-favicon.svg"
+        />
         <title>PaisaTrack - Login</title>
-        <link rel="stylesheet" href="/css/login.css" />
+        <link rel="stylesheet" href="/css/global.css" />
     </head>
     <body>
         <main>
-            <div class="container">
+            <div class="card">
                 <!-- Main Title -->
                 <div class="main-title">
                     <h1>PaisaTrack - Login</h1>
                 </div>
 
-                <!-- Login form  -->
-                <form action="login.html" method="post">
+                <!-- Login form -->
+                <form action="books.html" method="post">
                     <label for="email">EMAIL</label>
                     <input
                         class="inputBox"
@@ -23,7 +28,7 @@
                         name="email"
                         id="email"
                         title="Enter valid email"
-                        placeholder="e.g. demo@exmaple.com"
+                        placeholder="e.g. demo@example.com"
                         autofocus
                         required
                     />
@@ -39,12 +44,14 @@
                     />
                     <!-- login button -->
                     <div class="login-btn">
-                        <button id="login" type="submit">Login</button>
+                        <button id="login" type="submit" class="btn">
+                            Login
+                        </button>
                     </div>
                 </form>
 
                 <!-- link to Signup page -->
-                <div class="signup">
+                <div class="auth-link">
                     Don't have an account?
                     <a href="register.html">Register</a>
                 </div>

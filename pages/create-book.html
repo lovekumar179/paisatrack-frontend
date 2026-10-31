@@ -3,10 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/create-book.css" />
-        <title>create-book</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/paisatrack-favicon.svg"
+        />
+        <title>PaisaTrack - Create Book</title>
+        <link rel="stylesheet" href="/css/global.css" />
     </head>
     <body>
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="logo-container">
+                <div class="app-logo">
+                    <img src="assets/paisatrack-favicon.svg" alt="app logo" />
+                </div>
+
+                <div class="app-text">
+                    <span class="app-name">PaisaTrack</span>
+                    <span class="app-tagline">Smart Expense Tracker</span>
+                </div>
+            </div>
+
+            <a href="profile.html" title="My Profile">
+                <div class="avatar">👤</div>
+            </a>
+        </header>
         <main>
             <div class="card">
                 <!-- Create Book Title -->
@@ -16,14 +38,14 @@
                 </div>
 
                 <!-- Create Book form -->
-                <form action="login.html" method="post">
+                <form action="books.html" method="post">
                     <label for="book-name">BOOK NAME</label>
                     <input
                         class="inputBox"
                         type="text"
                         name="book-name"
                         id="book-name"
-                        title="Enter valid email"
+                        title="Enter book name"
                         placeholder="e.g. Grocery expense"
                         autofocus
                         required
@@ -36,10 +58,11 @@
 
                     <!-- Create button -->
                     <div class="create-btn">
-                        <button id="paisa-book" type="submit">Create Book</button>
+                        <button id="paisa-book" type="submit" class="btn">
+                            Create Book
+                        </button>
                     </div>
                 </form>
-
             </div>
         </main>
     </body>

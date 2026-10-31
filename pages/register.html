@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="assets/paisatrack-favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/register.css" />
         <title>PaisaTrack - Register</title>
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/register.css" />
     </head>
     <body>
         <main>
@@ -14,7 +16,7 @@
                 <span>Manage your money easily</span>
             </div>
 
-            <div class="main-container">
+            <div class="card">
                 <!-- Signup Title -->
                 <div class="main-title">
                     <h1>Register</h1>
@@ -40,8 +42,7 @@
                         name="email"
                         id="email"
                         title="Enter valid email"
-                        placeholder="e.g. demo@exmaple.com"
-                        autofocus
+                        placeholder="e.g. demo@example.com"
                         required
                     />
                     <label for="password">PASSWORD</label>
@@ -54,14 +55,14 @@
                         placeholder="At least 8 characters"
                         required
                     />
-                    <!-- login button -->
+                    <!-- register button -->
                     <div class="reg-btn">
-                        <button id="register" type="submit">Register</button>
+                        <button id="register" type="submit" class="btn">Register</button>
                     </div>
                 </form>
 
                 <!-- link to login page -->
-                <div class="login-page">
+                <div class="auth-link login-page">
                     Already have an account?
                     <a href="login.html">Login</a>
                 </div>
