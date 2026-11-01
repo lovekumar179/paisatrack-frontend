@@ -1,0 +1,207 @@
+main {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    text-align: left;
+}
+
+/* Book name & currency */
+
+.book-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.book-title h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f1f5f9;
+}
+
+.book-title .currency {
+    font-size: 11px;
+    font-weight: 700;
+    color: #4F46E5;
+    background-color: #eef2ff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+/* Total balance box */
+
+.balance-box {
+    background-color: #4F46E5;
+    border-radius: 12px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 4px 17px 4px rgb(47 46 46);
+}
+
+.balance-box .balance-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #c7d2fe;
+    letter-spacing: 1px;
+}
+
+.balance-box .balance-amount {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Cash In & Cash Out totals */
+
+.amount-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.amount-box {
+    flex: 1;
+    background-color: #e0ebf7;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.amount-box .amount-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: 1px;
+}
+
+.amount-in {
+    font-size: 18px;
+    font-weight: 700;
+    color: #16a34a;
+}
+
+.amount-out {
+    font-size: 18px;
+    font-weight: 700;
+    color: #dc2626;
+}
+
+/* Cash In and Cash Out buttons */
+
+.action-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.action-row .btn-cashin {
+    flex: 1;
+    background-color: #16a34a;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 8px;
+}
+
+.action-row .btn-cashin:hover {
+    background-color: #15803d;
+}
+
+.action-row .btn-cashout {
+    flex: 1;
+    background-color: #dc2626;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 8px;
+}
+
+.action-row .btn-cashout:hover {
+    background-color: #b91c1c;
+}
+
+/* Filter options */
+
+.filter-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    background-color: #e0ebf7;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+.filter-btn.active {
+    background-color: #4F46E5;
+    color: #fff;
+}
+
+/* Transactions list */
+
+.transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transaction-box {
+    background-color: #e0ebf7;
+    border-radius: 10px;
+    padding: 15px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 17px 4px rgb(47 46 46);
+}
+
+.transaction-box:hover {
+    background-color: #d3e2f2;
+}
+
+.transaction-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.transaction-detail h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.transaction-detail span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .balance-box .balance-amount {
+        font-size: 28px;
+    }
+}
