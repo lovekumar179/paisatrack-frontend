@@ -1,0 +1,120 @@
+/* Main content */
+main {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    text-align: left;
+}
+
+/* Page title and create button */
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f1f5f9;
+}
+
+.page-title .create-btn {
+    background-color: #4f46e5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.page-title .create-btn:hover {
+    background-color: #4338ca;
+}
+
+/* Books list */
+
+.books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Book box */
+
+.book-box {
+    background-color: #e0ebf7;
+    border-radius: 10px;
+    padding: 18px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 17px 4px rgb(47 46 46);
+}
+
+.book-box:hover {
+    background-color: #d3e2f2;
+}
+
+/* Book name and note */
+
+.book-detail h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.book-detail span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Currency and balance */
+
+.book-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.book-amount .currency {
+    font-size: 10px;
+    font-weight: 700;
+    color: #4f46e5;
+    background-color: #eef2ff;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+.book-amount .balance {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .app-header .app-name span {
+        font-size: 20px;
+    }
+
+    .app-header .app-name img {
+        width: 30px;
+    }
+    .page-title {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .page-title .create-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
