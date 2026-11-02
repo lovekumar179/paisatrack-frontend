@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="assets/paisatrack-favicon.svg" />
+        <title>PaisaTrack - Add Transaction</title>
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/transaction.css" />
+    </head>
+    <body>
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="logo-container">
+                <div class="app-logo">
+                    <img src="assets/paisatrack-favicon.svg" alt="app logo" />
+                </div>
+
+                <div class="app-text">
+                    <span class="app-name">PaisaTrack</span>
+                    <span class="app-tagline">Smart Expense Tracker</span>
+                </div>
+            </div>
+
+            <a href="profile.html" title="My Profile">
+                <div class="avatar">👤</div>
+            </a>
+        </header>
+
+        <main>
+            <!-- Card -->
+            <div class="card">
+
+                <div class="main-title">
+                    <h1>Cash In / Cash out</h1>
+                </div>
+
+                <!-- Transaction Form -->
+                <form action="dashboard.html" method="POST">
+                    <label for="category">SELECT CATEGORY</label>
+                    <select
+                        class="inputBox category-select"
+                        id="category"
+                        name="category"
+                        required
+                        >
+                        <option value="salary">Salary(cash-in)</option>
+                        <option value="investment">Investment(cash-out)</option>
+                        <option value="business">Business(cash-in)</option>
+                        <option value="rent">Rent(cash-out)</option>
+                        <option value="loan">Loan(cash-out)</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="amount">AMOUNT</label>
+                    <input
+                        class="inputBox"
+                        type="number"
+                        name="amount"
+                        id="amount"
+                        placeholder="e.g. 50000"
+                        autofocus
+                        required
+                    />
+                    <label for="date">DATE</label>
+                    <input
+                        class="inputBox"
+                        type="date"
+                        name="date"
+                        id="date"
+                        required
+                    />
+
+                    <label for="note">NOTE (OPTIONAL)</label>
+                    <textarea
+                        class="note-box"
+                        name="note"
+                        id="note"
+                        placeholder="e.g. October ki salary"
+                    ></textarea>
+
+                    <!-- Add Transaction Button -->
+                    <div class="save-btn">
+                        <button type="submit" class="btn">
+                            Add Transaction
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Back to dashboard link -->
+                <div class="back">
+                    <a href="dashboard.html">← Back to Dashboard</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
